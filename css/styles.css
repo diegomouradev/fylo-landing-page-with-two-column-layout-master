@@ -1,0 +1,344 @@
+/*
+    --------------------------- CSS RESET
+    */   
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 0;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+   
+    /*
+    --------------------------- BORDER BOX
+    */
+
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+### Accent
+
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)
+
+## Typography
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400 */
+
+/*
+    --------------------------- GENERAL STYLE
+*/
+
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 1px;
+}
+h1{
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway';
+    font-size: 40em;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+h2{
+    color: hsl(243, 87%, 12%);
+
+}
+p{
+    color: hsl(243, 87%, 12%);
+    font-family: 'Open sans';
+    font-size: 16em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.4em;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Open sans';
+    font-size: 16em;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 1.4em;
+}
+
+/*
+    --------------------------- Site - Main
+*/
+
+/* .site{
+    display: grid;
+    justify-content: end;
+}
+
+.site-bg{
+    grid-row: 2/3;
+    background-color: hsl(240, 75%, 98%) ;
+    max-height: 700px;
+
+} */
+
+main{
+    margin: 90em 80em 100em 80em;
+}
+
+
+
+/*
+    --------------------------- Header > Grid + Content
+*/
+
+
+.page-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 70em 80em 0em 80em;
+    }
+
+.header-logo{
+     grid-column: 1/2;
+    }
+
+.header-nav{
+     grid-column: 2/3;
+     display: grid;
+     justify-content: flex-end;
+ }
+
+.header-links{
+    display: flex;
+    width: 270em;
+    justify-content: space-between;
+}
+
+
+
+/*
+    --------------------------- Section > Subscribe Top
+*/
+
+
+.subscribe-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30em;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-img {
+    grid-column: 2/3;
+    max-width: 640em;
+}
+
+.form-container{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 640em;
+}
+.top-form{
+    margin-top: 30em;
+}
+.subscribe-input-top {
+    border-color: hsl(243, 87%, 12%);
+    border-style: solid;
+    border-width: 0.1em;
+    width: 320px;
+    height: 45px;
+    border-radius: 0.3em;
+}
+.subscribe-top-btn{
+    background-color: hsl(224, 93%, 58%);
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    border-radius: 0.3em;
+    margin-left: 15px;
+    box-shadow: 5px 2px 8px hsla(224, 93%, 58%, 0.4); 
+}
+.subscribe-top-btn:hover{
+    background-color: hsl(170, 45%, 43%);
+    color: #FFF;
+    transition: 0.5s;
+}
+
+/*
+    --------------------------- Testimonial
+*/
+.testimonial{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+}
+.testimonial.bg{
+    background-image: url(../images/bg-curve-desktop.svg);
+    z-index: -100;
+}
+.img-container{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.testimonial-img {
+    max-width: 542em;
+}
+
+.testimonial-copy{
+    grid-template-columns: 1/2;
+    grid-row: 1/2;
+}
+
+.copy-paragraph{
+    max-width: 510px;
+    font-family: 'Open sans';
+    font-size: 16em;
+}
+
+.copy-link{
+    color: hsl(170, 45%, 43%) ;
+    text-decoration: underline;
+    font-family: 'Open sans';
+    font-size: inherit;
+}
+
+.testimonial-card{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    max-width: 360px;
+    max-height: 210px;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 32px;
+    box-shadow: 5px 2px 8px hsla(0, 0%, 0%, 0.2);
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-copy{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.8em;
+}
+.card-client{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 5PX;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20PX;
+}
+
+.client-avatar{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    max-width: 33px;
+    max-height: 33px;
+    border-radius: 50%;
+}
+.client-name{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-size: 12px;
+    font-weight: bold;
+}
+.client-title{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 9px;
+    font-weight: normal;
+}
+
+/*
+    --------------------------- Subscribe Bottom
+*/
+
+.subscribe-bottom{
+    background-color: hsl(238, 22%, 44%);
+}
