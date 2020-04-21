@@ -18,8 +18,7 @@
   <script src="https://kit.fontawesome.com/64c369e33d.js" crossorigin="anonymous"></script>
 </head>
 <body class="site">
-  <div><img class="site-bg" src="./images/bg-curve-desktop.svg" alt=""></div>
-  
+  <!-- HEADER -->
   <header class="page-header">
     <img class="header-logo" src="./images/logo.svg" alt="logo fylo">
     <nav class="header-nav">
@@ -31,12 +30,11 @@
     </nav>
   </header>
 
+  <!-- MAIN SECTIONS -->
   <main class="main-container">
+    <!-- SECTION 1 -->
     <section class="subscribe-top">
-      
-        <img class="subscribe-img"src="./images/illustration-1.svg" alt="illustration of characters playing with a giant file folder">
-      
-      
+      <img class="subscribe-img"src="./images/illustration-1.svg" alt="illustration of characters playing with a giant file folder">
       <div class="form-container">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>  
@@ -45,13 +43,12 @@
           family, and co-workers.
         </p>
         <form class="top-form">
-          <input class="subscribe-input-top" type="email" name="email" id="email" autocomplete="email" placeholder="     Enter your email..." required>
-          <button class="subscribe-top-btn" name="submit" type="submit" value="submit">Get Started</button>
+          <input class="subscribe-input" type="email" name="email" id="email" autocomplete="email" placeholder="     Enter your email..." required>
+          <button class="subscribe-btn" name="submit" type="submit" value="submit">Get Started</button>
         </form>
       </div>
     </section>
-
-    
+    <!-- SECTION 2 -->
     <section class="testimonial">
       <div class="img-container"><img class="testimonial-img" src="./images/illustration-2.svg" alt="illustration of three characters holding big dialog boxes"></div>
       <div class="testimonial-copy">
@@ -65,44 +62,42 @@
           live collaboration. No email attachments required!
         </p>
         <p><a class="copy-link" href="#">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a></p>
-        
-        <aside class="testimonial-card">
-          <img class="card-quotation-mark" src="./images/icon-quotes.svg" alt="quotation mark">
-          <div>
-            <p class="card-copy">
-              Fylo has improved our team productivity by an order of magnitude. Since 
-              making the switch our team has become a well-oiled collaboration machine.
-            </p>
-          </div>
-          <div class="card-client">
-            
-              <img class="client-avatar" src="./images/avatar-testimonial.jpg" alt="Kyle Burton">
-            
+      </div>
+
+      <aside class="testimonial-card">
+        <img class="card-quotation-mark" src="./images/icon-quotes.svg" alt="quotation mark">
+        <p class="card-copy">
+          Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.
+        </p>
+        <div class="card-client">
+            <img class="client-avatar" src="./images/avatar-testimonial.jpg" alt="Kyle Burton">
             <span class="client-name">Kyle Burton</span>
             <span class="client-title">Founder & CEO, Huddle</span>
-          </div>
-
-        </aside>
+        </div>
+       </aside>
     </section>
-
   </main>
 
+  <!-- FULL BLEED SUBSCRIBE BOTTOM -->
   <aside class="subscribe-bottom">
     <div class="botom-copy">
       <h2>
         Get early access today
       </h2>
-      <p>
+      <p class="copy-paragraph-bottom">
         It only takes a minute to sign up and our free starter tier is extremely generous. 
         If you have any questions, our support team would be happy to help you.
       </p>
     </div>
     <form class="bottom-form">
-      <input type="email" name="email" id="email" autocomplete="email" required>
-      <button class="subscribe-bottom-btn" name="submit" type="submit" value="submit">Get Started For Free</button>
+      <input id="input-bottom" class="subscribe-input" type="email" name="email" id="email" autocomplete="email" placeholder="   email@example.com" required><br>
+      <button id="btn-bottom" class="subscribe-btn second" name="submit" type="submit" value="submit" >Get Started For Free</button>
     </form>
   </aside>
-  <footer>
+
+  <!-- PROJECT FOOTER -->
+  <footer class="project-footer">
     <img class="footer-logo" src="./images/logo.svg" alt="logo fylo">
     <div class="fylo-contact">
       <span><img src="./images/icon-phone.svg" alt=""> Phone: <a href="tel:1-543-123-4567">1-543-123-4567</a></span>
@@ -128,11 +123,13 @@
     </nav>
   </footer>
 
+  <!-- ATTRIBUTION FOOTER -->
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Diego Moura</a>.
     </p>
   </footer>
+
 </body>
 </html>
