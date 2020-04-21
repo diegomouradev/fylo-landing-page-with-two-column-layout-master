@@ -146,14 +146,14 @@ a{
     --------------------------- Site - Main
 */
 
-main{
+/* main{
     padding: 90em 80em 100em 80em;
-}
-.main-container {
+} */
+/* .main-container {
     background-image: url('../images/bg-curve-desktop.svg');
     background-position: center center;
     background-repeat: repeat-x;
-}
+} */
 
 
 /*
@@ -198,6 +198,7 @@ main{
     column-gap: 30em;
     justify-content: center;
     align-items: center;
+    padding: 100px 80px;
 }
 
 .subscribe-img {
@@ -240,14 +241,20 @@ main{
 /*
     --------------------------- Testimonial
 */
-.testimonial{
+#testimonial{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 30em;
     justify-content: center;
     align-items: top;
-    margin-top: 350px;
+    background-color: hsl(240, 75%, 98%);
+    padding: 0 80px 0 80px;
+}
+
+.background-image{
+    overflow: visible;
+    margin-top: 200px;
 }
 
 .img-container{
@@ -257,13 +264,16 @@ main{
     flex-direction: column;
     align-items: end;
 }
+
 .testimonial-img {
     max-width: 542em;
+    z-index: 100;
 }
 
 .testimonial-copy{
     grid-template-columns: 1/2;
     grid-row: 1/2;
+    z-index: 100;
 }
 
 .copy-paragraph{
@@ -288,7 +298,6 @@ main{
     border-radius: 5px;
     padding: 32px;
     box-shadow: 5px 2px 8px hsla(0, 0%, 0%, 0.2);
-    margin-top: 45px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -371,6 +380,61 @@ main{
 */
 
 .project-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: top;
     height: 480px;
+    padding: 105px 80px;
     background-color: hsl(243, 87%, 12%);
 }
+
+.project-footer a{
+    color: #fff;
+}
+
+.footer-logo{
+    grid-row: 1/2;
+    grid-template-columns: 1/2;
+}
+.fylo-contact{
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 3/5;
+    grid-column: 1/2;
+    max-height: 25px;
+}
+.fylo-phone, .fylo-mail{
+    margin-right: 20px;
+}
+.phone-container, .mail-container{
+    margin: 5px 0;
+}
+
+.footer-links-1{
+    grid-row: 3/5;
+    grid-column: 2/3;
+}
+.footer-links-1 >*, .footer-links-2>*{
+    margin: 8px 0;
+}
+.footer-links-2{
+    grid-row: 3/5;
+    grid-column: 3/4;
+}
+
+.footer-links-social{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*
+    --------------------------- Attribution
+*/
+
+.attribution a{
+    font-size: inherit;
+}
+
